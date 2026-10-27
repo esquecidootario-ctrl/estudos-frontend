@@ -1,0 +1,324 @@
+/* 1. Configurações gerais */
+:root {
+    --color-background: #090b13;
+    --color-card: rgba(19, 22, 36, 0.76);
+    --color-text: #f5f7ff;
+    --color-muted: #999fb5;
+    --color-accent: #a8ffcf;
+    --color-accent-dark: #132b27;
+    --color-border: rgba(255, 255, 255, 0.11);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: var(--color-text);
+    background:
+        radial-gradient(ellipse at 50% 0%, rgba(52, 69, 104, 0.24), transparent 48%),
+        var(--color-background);
+    overflow-x: hidden;
+}
+
+/* 2. Formas desfocadas que decoram o fundo */
+.background-shape {
+    position: fixed;
+    z-index: 0;
+    border-radius: 50%;
+    filter: blur(90px);
+    opacity: 0.42;
+    pointer-events: none;
+}
+
+.shape-one {
+    width: 300px;
+    height: 300px;
+    top: 8%;
+    left: -110px;
+    background: #356b8e;
+}
+
+.shape-two {
+    width: 350px;
+    height: 350px;
+    right: -120px;
+    bottom: 4%;
+    background: #4a3c83;
+}
+
+.shape-three {
+    width: 180px;
+    height: 180px;
+    top: 55%;
+    left: 52%;
+    background: #175b50;
+    opacity: 0.26;
+}
+
+/* 3. Área que centraliza o cartão */
+.login-page {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 42px 20px 22px;
+}
+
+.login-card {
+    width: min(100%, 430px);
+    padding: 36px;
+    border: 1px solid var(--color-border);
+    border-radius: 24px;
+    background: var(--color-card);
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+}
+
+/* 4. Logo e textos */
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: 750;
+    letter-spacing: -1px;
+}
+
+.brand-mark {
+    display: grid;
+    width: 34px;
+    height: 34px;
+    place-items: center;
+    border-radius: 12px;
+    color: #0b1712;
+    background: var(--color-accent);
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.brand-dot {
+    color: var(--color-accent);
+}
+
+.heading {
+    margin: 36px 0 28px;
+}
+
+.eyebrow {
+    margin-bottom: 10px;
+    color: var(--color-accent);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+}
+
+h1 {
+    font-size: clamp(27px, 5vw, 32px);
+    line-height: 1.2;
+    letter-spacing: -1.1px;
+}
+
+.subtitle {
+    margin-top: 10px;
+    color: var(--color-muted);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* 5. Campos de entrada */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.form-field label,
+.label-row label {
+    color: #e7e9f2;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.label-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.form-field input {
+    width: 100%;
+    min-height: 49px;
+    padding: 0 15px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    outline: none;
+    background: rgba(5, 7, 13, 0.42);
+    color: var(--color-text);
+    font: inherit;
+    font-size: 13px;
+    transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.form-field input::placeholder {
+    color: #70778d;
+}
+
+.form-field input:focus {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(168, 255, 207, 0.1);
+}
+
+.text-link {
+    color: var(--color-accent);
+    font-size: 12px;
+    font-weight: 650;
+    text-decoration: none;
+}
+
+.text-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.remember-option {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-top: -3px;
+    color: var(--color-muted);
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.remember-option input {
+    width: 15px;
+    height: 15px;
+    accent-color: var(--color-accent);
+    cursor: pointer;
+}
+
+/* 6. Botão principal */
+.login-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-height: 50px;
+    margin-top: 2px;
+    border: 0;
+    border-radius: 12px;
+    background: var(--color-accent);
+    color: #0d1b14;
+    font: inherit;
+    font-size: 14px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+}
+
+.login-button span {
+    font-size: 19px;
+    transition: transform 180ms ease;
+}
+
+.login-button:hover {
+    background: #c1ffdc;
+    box-shadow: 0 8px 28px rgba(124, 255, 186, 0.16);
+    transform: translateY(-1px);
+}
+
+.login-button:hover span {
+    transform: translateX(3px);
+}
+
+.login-button:focus-visible,
+a:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 4px;
+}
+
+.signup-text {
+    margin-top: 26px;
+    color: var(--color-muted);
+    text-align: center;
+    font-size: 12px;
+}
+
+.security-note {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 26px;
+    color: #7f879d;
+    font-size: 10px;
+}
+
+.security-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--color-accent);
+    box-shadow: 0 0 10px rgba(168, 255, 207, 0.6);
+}
+
+.page-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: min(100%, 430px);
+    margin-top: 24px;
+    color: #73798e;
+    font-size: 10px;
+}
+
+/* 7. Ajustes para telas pequenas */
+@media (max-width: 480px) {
+    .login-page {
+        padding: 24px 14px 18px;
+    }
+
+    .login-card {
+        padding: 28px 22px;
+        border-radius: 20px;
+    }
+
+    .heading {
+        margin-top: 30px;
+    }
+
+    .page-footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        text-align: center;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}
