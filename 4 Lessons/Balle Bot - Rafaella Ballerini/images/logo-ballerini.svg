@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 76" role="img" aria-labelledby="title">
+  <title id="title">Ballerini</title>
+  <g fill="none" stroke="#FFF2E7" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 18c10-11 27-11 37 0s10 25 0 36-27 11-37 0"/>
+    <path d="M37 18c-10 11-10 25 0 36s27 11 37 0"/>
+    <path d="M23 28h19c8 0 13 4 13 10s-5 10-13 10H23"/>
+  </g>
+  <text x="87" y="48" fill="#FFF2E7" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" letter-spacing="1">Ballerini</text>
+</svg>

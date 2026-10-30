@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 500" role="img" aria-labelledby="title desc">
+  <title id="title">Balle Bot</title>
+  <desc id="desc">Robô simpático em tons de creme, terracota e vinho, com antena e visor sorridente.</desc>
+  <defs>
+    <linearGradient id="shell" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF2E7"/>
+      <stop offset="1" stop-color="#D6B5A0"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#B98270"/>
+      <stop offset="1" stop-color="#75463F"/>
+    </linearGradient>
+    <linearGradient id="visor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#453035"/>
+      <stop offset="1" stop-color="#2F2325"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8"/>
+      <feOffset dy="10"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.24"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <circle cx="243" cy="246" r="190" fill="#ECD6C4" opacity=".11"/>
+  <circle cx="364" cy="111" r="24" fill="#ECD6C4" opacity=".23"/>
+  <circle cx="91" cy="342" r="15" fill="#ECD6C4" opacity=".22"/>
+  <path d="M70 148c20-57 80-98 145-96 56 1 111 29 145 75" fill="none" stroke="#ECD6C4" stroke-width="2" stroke-dasharray="5 10" opacity=".45"/>
+
+  <!-- antena -->
+  <path d="M241 71V42" stroke="#ECD6C4" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="241" cy="30" r="19" fill="#ECD6C4"/>
+  <circle cx="241" cy="30" r="8" fill="#8E5D52"/>
+
+  <!-- laterais da cabeça -->
+  <rect x="91" y="123" width="44" height="90" rx="20" fill="#B98270"/>
+  <rect x="341" y="123" width="44" height="90" rx="20" fill="#B98270"/>
+  <rect x="100" y="140" width="25" height="54" rx="12" fill="#ECD6C4" opacity=".75"/>
+  <rect x="351" y="140" width="25" height="54" rx="12" fill="#ECD6C4" opacity=".75"/>
+
+  <!-- cabeça -->
+  <g filter="url(#shadow)">
+    <rect x="111" y="78" width="254" height="210" rx="64" fill="url(#shell)" stroke="#2F2325" stroke-width="7"/>
+    <path d="M143 93c26-16 161-18 190 2" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" opacity=".6"/>
+    <rect x="133" y="119" width="210" height="127" rx="43" fill="url(#visor)"/>
+    <ellipse cx="190" cy="171" rx="13" ry="19" fill="#ECD6C4"/>
+    <ellipse cx="286" cy="171" rx="13" ry="19" fill="#ECD6C4"/>
+    <path d="M207 202q31 28 63 0" fill="none" stroke="#ECD6C4" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="166" cy="218" r="7" fill="#B98270"/>
+    <circle cx="309" cy="218" r="7" fill="#B98270"/>
+  </g>
+
+  <!-- pescoço -->
+  <rect x="213" y="278" width="56" height="34" rx="13" fill="#ECD6C4" stroke="#2F2325" stroke-width="6"/>
+
+  <!-- corpo -->
+  <g filter="url(#shadow)">
+    <path d="M154 300Q240 276 326 300L350 411Q352 441 323 446H157Q128 441 130 411Z" fill="url(#body)" stroke="#2F2325" stroke-width="7"/>
+    <path d="M170 318Q240 300 310 318" fill="none" stroke="#E7C4B0" stroke-width="6" stroke-linecap="round" opacity=".7"/>
+    <rect x="181" y="334" width="118" height="65" rx="22" fill="#2F2325" stroke="#ECD6C4" stroke-width="5"/>
+    <path d="M207 354h66M207 370h43" stroke="#ECD6C4" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="274" cy="370" r="6" fill="#B98270"/>
+  </g>
+
+  <!-- braços -->
+  <path d="M145 326l-44 31q-14 10-6 25l16 28" fill="none" stroke="#ECD6C4" stroke-width="24" stroke-linecap="round"/>
+  <circle cx="111" cy="414" r="19" fill="#B98270" stroke="#2F2325" stroke-width="6"/>
+  <path d="M333 326l44 31q14 10 6 25l-16 28" fill="none" stroke="#ECD6C4" stroke-width="24" stroke-linecap="round"/>
+  <circle cx="367" cy="414" r="19" fill="#B98270" stroke="#2F2325" stroke-width="6"/>
+
+  <!-- base e detalhe central -->
+  <path d="M178 444v22q0 13 13 13h25v-29M302 444v22q0 13-13 13h-25v-29" fill="#ECD6C4" stroke="#2F2325" stroke-width="6" stroke-linejoin="round"/>
+  <rect x="219" y="420" width="44" height="20" rx="10" fill="#ECD6C4"/>
+  <circle cx="241" cy="430" r="6" fill="#8E5D52"/>
+
+  <!-- brilho decorativo -->
+  <path d="M391 251l7 17 18 7-18 7-7 18-7-18-18-7 18-7z" fill="#ECD6C4" opacity=".8"/>
+  <path d="M75 224l5 12 13 5-13 5-5 13-5-13-13-5 13-5z" fill="#ECD6C4" opacity=".7"/>
+</svg>

@@ -1,0 +1,577 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="A cozy coffee shop website built with HTML and CSS.">
+
+    <title>Coffee | Fresh Coffee Every Morning</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <a href="#home" class="logo" aria-label="Coffee home">
+            <i class="fa-solid fa-mug-hot" aria-hidden="true"></i>
+            <span>Coffee<span class="logo-dot">.</span></span>
+        </a>
+
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#menu" class="nav-link">Menu</a>
+            <a href="#review" class="nav-link">Review</a>
+            <a href="#address" class="nav-link">Address</a>
+        </nav>
+
+            <div class="header-actions">
+                <a href="#menu" class="icon-button" aria-label="Ver cardápio">
+                <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                </a>
+            </div>   
+            
+    </header>
+
+    <main>
+
+        <!-- HOME -->
+
+        <section class="home" id="home" aria-labelledby="home-title">
+
+            <div class="home-content">
+
+                <p class="eyebrow">
+                    <span></span> Freshly brewed every day
+                </p>
+
+                <h1 id="home-title">
+                    FRESH COFFEE<br>
+                    IN THE <span>MORNING</span>
+                </h1>
+
+                <p class="home-description">
+                    Start your day with the smell of freshly roasted coffee.
+                    Carefully selected beans, a cozy atmosphere and a cup
+                    made just for you.
+                </p>
+
+                <a href="#menu" class="btn">
+                    Get yours now
+                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+
+                <div class="home-note">
+                    <i class="fa-solid fa-seedling" aria-hidden="true"></i>
+                    Carefully selected coffee beans
+                </div>
+
+            </div>
+
+            <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+                <span></span> Scroll to explore
+            </a>
+
+        </section>
+
+        <!-- ABOUT -->
+
+        <section class="about section" id="about" aria-labelledby="about-title">
+
+            <div class="section-heading">
+
+                <p class="section-kicker">A little about us</p>
+
+                <h2 id="about-title">
+                    ABOUT <span>US</span>
+                </h2>
+
+            </div>
+
+            <div class="about-row">
+
+                <div class="about-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1100&q=85"
+                        alt="Fresh coffee being prepared in a cozy café"
+                        loading="lazy"
+                    >
+
+                    <div class="image-caption">
+                        <i class="fa-solid fa-mug-hot" aria-hidden="true"></i>
+                        <span>Good coffee.<br>Good moments.</span>
+                    </div>
+
+                </div>
+
+                <div class="about-content">
+
+                    <h3>What makes our coffee special?</h3>
+
+                    <p>
+                        For us, coffee is more than a drink: it is a reason to
+                        slow down, get together and enjoy the moment. Every cup
+                        is prepared with care, from the choice of beans to the
+                        last detail.
+                    </p>
+
+                    <p>
+                        Come in for your morning espresso, stay for a
+                        conversation, and leave already thinking about
+                        your next visit.
+                    </p>
+
+                    <a href="#address" class="btn">
+                        Learn more
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+
+                    <div class="about-benefits">
+
+                        <span>
+                            <i class="fa-solid fa-check" aria-hidden="true"></i>
+                            Freshly roasted
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-check" aria-hidden="true"></i>
+                            Made with care
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- MENU -->
+
+        <section class="menu section" id="menu" aria-labelledby="menu-title">
+
+            <div class="section-heading">
+
+                <p class="section-kicker">Made fresh, just for you</p>
+
+                <h2 id="menu-title">
+                    OUR <span>MENU</span>
+                </h2>
+
+            </div>
+
+            <div class="menu-grid">
+
+                <article class="menu-card">
+
+                    <div class="product-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=700&q=85"
+                            alt="Cup of espresso"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <h3>Classic Espresso</h3>
+
+                    <p class="product-description">
+                        Bold, balanced and full of character.
+                    </p>
+
+                    <p class="price">
+                        <strong>$4.50</strong>
+                        <del>$6.00</del>
+                    </p>
+
+                    <a href="#address" class="btn">Visit us</a>
+
+                </article>
+
+                <article class="menu-card">
+
+                    <div class="product-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=700&q=85"
+                            alt="Cappuccino with milk foam"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <h3>Creamy Cappuccino</h3>
+
+                    <p class="product-description">
+                        Espresso, steamed milk and silky foam.
+                    </p>
+
+                    <p class="price">
+                        <strong>$5.50</strong>
+                        <del>$7.00</del>
+                    </p>
+
+                    <a href="#address" class="btn">Visit us</a>
+
+                </article>
+
+                <article class="menu-card">
+
+                    <div class="product-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=85"
+                            alt="Iced coffee in a glass"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <h3>Iced Coffee</h3>
+
+                    <p class="product-description">
+                        A refreshing coffee over ice.
+                    </p>
+
+                    <p class="price">
+                        <strong>$5.00</strong>
+                        <del>$6.50</del>
+                    </p>
+
+                    <a href="#address" class="btn">Visit us</a>
+
+                </article>
+
+                <article class="menu-card">
+
+                    <div class="product-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=700&q=85"
+                            alt="Hot coffee in a ceramic cup"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <h3>House Coffee</h3>
+
+                    <p class="product-description">
+                        A smooth, comforting everyday cup.
+                    </p>
+
+                    <p class="price">
+                        <strong>$3.50</strong>
+                        <del>$4.50</del>
+                    </p>
+
+                    <a href="#address" class="btn">Visit us</a>
+
+                </article>
+
+                <article class="menu-card">
+
+                    <div class="product-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=700&q=85"
+                            alt="Latte with milk foam"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <h3>Vanilla Latte</h3>
+
+                    <p class="product-description">
+                        Espresso, warm milk and a hint of vanilla.
+                    </p>
+
+                    <p class="price">
+                        <strong>$5.75</strong>
+                        <del>$7.25</del>
+                    </p>
+
+                    <a href="#address" class="btn">Visit us</a>
+
+                </article>
+
+                <article class="menu-card">
+
+                    <div class="product-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=700&q=85"
+                            alt="Freshly served coffee on a café table"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <h3>Mocha Delight</h3>
+
+                    <p class="product-description">
+                        Coffee and chocolate in one rich cup.
+                    </p>
+
+                    <p class="price">
+                        <strong>$6.00</strong>
+                        <del>$7.50</del>
+                    </p>
+
+                    <a href="#address" class="btn">Visit us</a>
+
+                </article>
+
+            </div>
+
+            <p class="menu-note">
+                <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+                Prices are examples for this portfolio project.
+            </p>
+
+        </section>
+
+        <!-- REVIEWS -->
+
+        <section class="review section" id="review" aria-labelledby="review-title">
+
+            <div class="section-heading">
+
+                <p class="section-kicker">Kind words from our guests</p>
+
+                <h2 id="review-title">
+                    OUR <span>CLIENTS</span>
+                </h2>
+
+            </div>
+
+            <div class="review-grid">
+
+                <article class="review-card">
+
+                    <i class="fa-solid fa-quote-left quote-icon" aria-hidden="true"></i>
+
+                    <p class="review-text">
+                        “The coffee is wonderful and the atmosphere is so
+                        welcoming. It has quickly become my favorite place
+                        to start the day.”
+                    </p>
+
+                    <div class="stars" aria-label="5 out of 5 stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <div class="review-person">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=160&q=80"
+                            alt="Customer portrait"
+                            loading="lazy"
+                        >
+
+                        <div>
+                            <h3>Sarah M.</h3>
+                            <span>Regular customer</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="review-card">
+
+                    <i class="fa-solid fa-quote-left quote-icon" aria-hidden="true"></i>
+
+                    <p class="review-text">
+                        “Great service, excellent cappuccino and a lovely
+                        space to read or get some work done. I recommend
+                        it to everyone.”
+                    </p>
+
+                    <div class="stars" aria-label="5 out of 5 stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <div class="review-person">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=160&q=80"
+                            alt="Customer portrait"
+                            loading="lazy"
+                        >
+
+                        <div>
+                            <h3>Michael R.</h3>
+                            <span>Coffee lover</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="review-card">
+
+                    <i class="fa-solid fa-quote-left quote-icon" aria-hidden="true"></i>
+
+                    <p class="review-text">
+                        “You can taste the care in every cup. The menu has
+                        something for everyone, and the staff always make
+                        you feel at home.”
+                    </p>
+
+                    <div class="stars" aria-label="5 out of 5 stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <div class="review-person">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=160&q=80"
+                            alt="Customer portrait"
+                            loading="lazy"
+                        >
+
+                        <div>
+                            <h3>Daniel P.</h3>
+                            <span>Local guest</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- ADDRESS -->
+
+        <section class="address section" id="address" aria-labelledby="address-title">
+
+            <div class="section-heading">
+
+                <p class="section-kicker">Come and say hello</p>
+
+                <h2>
+                    FIND <span>US</span>
+                </h2>
+
+            </div>
+
+            <div class="address-row">
+
+                <div class="map-frame">
+
+                    <iframe
+                        title="Map showing cafés in São Paulo"
+                        src="https://maps.google.com/maps?q=cafeteria%20S%C3%A3o%20Paulo&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        allowfullscreen
+                    ></iframe>
+
+                </div>
+
+                <div class="address-content">
+
+                    <h3 id="address-title">Your next coffee stop</h3>
+
+                    <p>
+                        We are always happy to welcome you. Stop by for a quick
+                        espresso, meet a friend or spend a quiet afternoon
+                        with your favorite drink.
+                    </p>
+
+                    <div class="address-detail">
+
+                        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+
+                        <div>
+                            <strong>Address</strong>
+                            <span>São Paulo, Brazil <small>(demo location)</small></span>
+                        </div>
+
+                    </div>
+
+                    <div class="address-detail">
+
+                        <i class="fa-regular fa-clock" aria-hidden="true"></i>
+
+                        <div>
+                            <strong>Opening hours</strong>
+                            <span>Monday – Saturday, 8 AM – 7 PM</span>
+                        </div>
+
+                    </div>
+
+                    <a
+                        class="btn"
+                        href="https://maps.google.com/?q=cafeteria+Sao+Paulo"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Get directions
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="social-links" aria-label="Social links">
+
+            <a href="https://instagram.com/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://facebook.com/" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="https://x.com/" aria-label="X" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+
+        </div>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#review">Review</a>
+            <a href="#address">Address</a>
+        </div>
+
+        <p>Created for learning by <span>Coffee.</span> | HTML &amp; CSS</p>
+
+        <a href="#home" class="back-to-top" aria-label="Back to top">
+            <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+        </a>
+
+    </footer>
+
+</body>
+</html>

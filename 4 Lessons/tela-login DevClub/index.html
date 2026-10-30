@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tela de login responsiva feita com HTML e CSS para estudo.">
+    <title>Entrar | Orbit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Formas decorativas do fundo: não fazem parte do conteúdo principal. -->
+    <div class="background-shape shape-one" aria-hidden="true"></div>
+    <div class="background-shape shape-two" aria-hidden="true"></div>
+    <div class="background-shape shape-three" aria-hidden="true"></div>
+
+    <main class="login-page">
+        <section class="login-card" aria-labelledby="login-title">
+            <a class="brand" href="#inicio" aria-label="Orbit, página inicial">
+                <span class="brand-mark" aria-hidden="true">o</span>
+                <span>orbit<span class="brand-dot">.</span></span>
+            </a>
+
+            <div class="heading">
+                <p class="eyebrow">BOM TER VOCÊ DE VOLTA</p>
+                <h1 id="login-title">Acesse sua conta</h1>
+                <p class="subtitle">Entre com seus dados para continuar.</p>
+            </div>
+
+            <form class="login-form">
+                <div class="form-field">
+                    <label for="email">E-mail</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="voce@exemplo.com"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+                <div class="form-field">
+                    <div class="label-row">
+                        <label for="password">Senha</label>
+                        <a class="text-link" href="#recuperar-senha">Esqueceu a senha?</a>
+                    </div>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Digite sua senha"
+                        autocomplete="current-password"
+                        required
+                    >
+                </div>
+
+                <label class="remember-option" for="remember">
+                    <input type="checkbox" id="remember" name="remember">
+                    <span>Manter conectado</span>
+                </label>
+
+                <!-- Botão visual: autenticação real exige um back-end. -->
+                <button class="login-button" type="button">Entrar na conta <span aria-hidden="true">→</span></button>
+            </form>
+
+            <p class="signup-text">Ainda não tem uma conta? <a class="text-link" href="#cadastro">Criar conta</a></p>
+            <p class="security-note"><span class="security-dot" aria-hidden="true"></span> Seus dados merecem estar seguros.</p>
+        </section>
+
+        <footer class="page-footer">
+            <span>© 2026 Orbit</span>
+            <span>Uma interface feita para estudar HTML e CSS</span>
+        </footer>
+    </main>
+</body>
+</html>
