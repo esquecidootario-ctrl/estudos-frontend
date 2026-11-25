@@ -6,3 +6,4 @@ Repositório que reúne meus projetos de estudos em desenvolvimento web.
 
 - Receitas
 - 4 Lessons
+- atividade POO - JS
